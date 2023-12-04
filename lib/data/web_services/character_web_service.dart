@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 
 import '../../core/constance/string_constace_app.dart';
 import '../models/characters.dart';
@@ -10,24 +11,13 @@ class CharactersWebServices {
     BaseOptions options = BaseOptions(
       baseUrl: kBaseUrl,
       receiveDataWhenStatusError: true,
-      connectTimeout: const Duration(seconds: 20), // 60 seconds,
+      connectTimeout: const Duration(seconds: 20),
       receiveTimeout:  const Duration(seconds: 20)
     );
 
     dio = Dio(options);
   }
 
-  // Future<List<dynamic>> getAllCharacters() async {
-  //   try {
-  //     Response response = await dio.get('character');
-  //     print(response.data.toString());
-  //     return response.data;
-  //   } catch (e) {
-  //     print("${e.toString()} // getAllCharacters WebService");
-  //     return [];
-  //   }
-  //
-  // }
 
   Future<List<Character>> fetchCharacters() async {
     try {
@@ -40,7 +30,9 @@ class CharactersWebServices {
 
       return characters;
     } catch (e) {
-      print('Error fetching characters: $e');
+      if (kDebugMode) {
+        print('Error fetching characters: $e');
+      }
       return [];
     }
   }

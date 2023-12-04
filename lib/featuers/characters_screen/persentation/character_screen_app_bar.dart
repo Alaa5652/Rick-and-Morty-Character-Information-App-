@@ -16,10 +16,10 @@ class CharacterScreenAppBar extends StatelessWidget
   Widget build(BuildContext context) {
     final characterProvider = Provider.of<CharacterProvider>(context);
     return AppBar(
-      backgroundColor: MyColors.lightSalmon,
+      backgroundColor: AppColors.lightSalmon,
       leading: characterProvider.isSearching
           ? BackButton(
-              color: MyColors.umber,
+              color: AppColors.umber,
               onPressed: () {
                 characterProvider.searchTextController.clear();
                 Navigator.pop(context);
@@ -37,7 +37,7 @@ class CharacterScreenAppBar extends StatelessWidget
                   characterProvider.searchTextController.clear();
                   Navigator.pop(context);
                 },
-                icon: const Icon(Icons.clear, color: MyColors.umber),
+                icon: const Icon(Icons.clear, color: AppColors.umber),
               )
             ]
           : [
@@ -55,7 +55,7 @@ class CharacterScreenAppBar extends StatelessWidget
                 },
                 icon: const Icon(
                   Icons.search,
-                  color: MyColors.umber,
+                  color: AppColors.umber,
                 ),
               )
             ],

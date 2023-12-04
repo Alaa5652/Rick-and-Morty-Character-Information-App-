@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../core/constance/lists.dart';
-import '../../../core/constance/valus.dart';
 import '../../../core/widgets/loading_indicator.dart';
 import '../../../logic/provider/character_provider.dart';
 import 'character_screen_loaded_body_item.dart';

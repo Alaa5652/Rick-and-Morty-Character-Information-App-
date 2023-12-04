@@ -14,16 +14,16 @@ class CharacterDetailsScreenAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      iconTheme: const IconThemeData(color: MyColors.umber,),
+      iconTheme: const IconThemeData(color: AppColors.umber,),
       expandedHeight: 600,
       pinned: true,
       stretch: true,
-      backgroundColor: MyColors.lightSalmon,
+      backgroundColor: AppColors.lightSalmon,
       flexibleSpace: FlexibleSpaceBar(
         centerTitle: true,
         title: Text(
           character.name ?? '',
-          style: const TextStyle(color: MyColors.umber,fontWeight: FontWeight.bold),
+          style: const TextStyle(color: AppColors.umber,fontWeight: FontWeight.bold),
         ),
         background: Hero(
           tag: character.id!,

@@ -17,7 +17,7 @@ class CustomCharacterInfo extends StatelessWidget {
           TextSpan(
             text: title,
             style: const TextStyle(
-              color: MyColors.umber,
+              color: AppColors.umber,
               fontWeight: FontWeight.bold,
               fontSize: 18,
             ),
@@ -25,7 +25,7 @@ class CustomCharacterInfo extends StatelessWidget {
           TextSpan(
             text: value,
             style: const TextStyle(
-              color: MyColors.umber,
+              color: AppColors.umber,
               fontSize: 16,
             ),
           ),

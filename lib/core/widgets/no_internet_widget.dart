@@ -19,7 +19,7 @@ class NoInternetWidget extends StatelessWidget {
               'Can\'t connect .. check internet',
               style: TextStyle(
                 fontSize: 22,
-                color: MyColors.lightSalmon,
+                color: AppColors.lightSalmon,
               ),
             ),
             Image.asset('assets/images/undraw_treasure_of9i.png')

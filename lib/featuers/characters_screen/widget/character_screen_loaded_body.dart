@@ -12,7 +12,7 @@ class CharacterScreenLoadedBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-        color: MyColors.platinum,
+        color: AppColors.platinum,
         child:  const Column(
           children: [
             CharactersScreenList(),

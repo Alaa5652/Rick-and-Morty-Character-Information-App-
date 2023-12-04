@@ -16,7 +16,7 @@ class CharacterScreenLoadedBodyItem extends StatelessWidget {
       margin: const EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
       padding: const EdgeInsetsDirectional.all(4),
       decoration: BoxDecoration(
-        color: MyColors.pewterBlue,
+        color: AppColors.pewterBlue,
         borderRadius: BorderRadius.circular(8),
       ),
       child: InkWell(
@@ -32,7 +32,7 @@ class CharacterScreenLoadedBodyItem extends StatelessWidget {
               style: const TextStyle(
                 height: 1.3,
                 fontSize: 16,
-                color: MyColors.platinum,
+                color: AppColors.platinum,
                 fontWeight: FontWeight.bold,
               ),
               overflow: TextOverflow.ellipsis,
@@ -43,7 +43,7 @@ class CharacterScreenLoadedBodyItem extends StatelessWidget {
           child: Hero(
             tag: character.id!,
             child: Container(
-              color: MyColors.keyLime,
+              color: AppColors.keyLime,
               child: character.image!.isNotEmpty
                   ? FadeInImage.assetNetwork(
                 width: double.infinity,

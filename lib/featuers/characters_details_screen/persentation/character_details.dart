@@ -12,7 +12,7 @@ class CharacterDetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: MyColors.platinum,
+      backgroundColor: AppColors.platinum,
       body: CustomScrollView(
         slivers: [
           CharacterDetailsScreenAppBar(character: character),

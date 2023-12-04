@@ -8,7 +8,7 @@ class AppBarTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Text(
       'Characters',
-      style: TextStyle(color: MyColors.umber),
+      style: TextStyle(color: AppColors.umber),
     );
   }
 }
